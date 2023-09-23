@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
+
+:root{
+    --font: 'DM Sans', sans-serif;
+    --color-main: #1b2026;
+    --color-text: #9c9c9c;
+    --color-pink: #f7d9c4;
+    --color-bg1: #efefef;
+    --color-bg2: #dce8eb;
+    --color-title1: #787878;
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font);
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-flex;
+}
+
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+}
+@media (min-width: 1240px){
+    .container{
+        padding: 0 32px;
+    }
+}
+@media (max-width: 1199.98px){
+    .container{
+        max-width: 960px;
+        padding: 0 32px;
+    }
+}
+@media (max-width: 991.98px){
+    .container{
+        max-width: 720px;
+        padding: 0 32px;
+    }
+}
+@media (max-width: 767.98px){
+    .container{
+        max-width: 540px;
+        padding: 0 20px;
+    }
+}
+@media (max-width: 575.98px){
+    .container{
+        max-width: 100%;
+        padding: 0 8px;
+    }
+}
+
+.button{
+    width: 160px;
+    height: 66px;
+}
+
+.button1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-pink);
+    border: 2px solid var(--color-pink);
+    color: #1b2026;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.button2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--color-text);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+.button1:hover{
+    background-color: #fff;   
+    border: 2px solid #fff;
+}
+.button2:hover{
+    background-color: var(--color-pink);   
+    border: 2px solid var(--color-pink);
+    color: var(--color-main);
+}
+.button3{
+    background-color: #1b2026;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #1b2026;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+.button3:hover{
+    background-color: var(--color-pink);   
+    border: 2px solid var(--color-pink);
+    color: var(--color-main);
+    cursor: pointer;
+}
