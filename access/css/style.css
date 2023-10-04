@@ -145,10 +145,9 @@
     margin-bottom: 40px;
 }
 .section-1 .inner-wrap .inner-content .inner-button{
-    display: flex;
-    
+    display: flex; 
 }
-.section-1 .inner-wrap .inner-content .button {
+.section-1 .inner-wrap .inner-content .button1 {
     margin-right: 20px;
 }
 
@@ -196,7 +195,7 @@
     width: 40%;
     
     overflow: hidden;
-    padding-left: 20px;
+    /* padding-left: 20px; */
 }
 .section-2 .container .inner-wrap .inner-content{
     width: 50%;
@@ -224,7 +223,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 81%;
+    width: 100%;
 }
 .section-2 .container .inner-wrap .inner-content .inner-illustration .inner-box{
     display: flex;
@@ -277,6 +276,30 @@
         width: 100%;
         color: var(--color-text);
     }
+}
+
+@media(max-width:467.98px){
+    .section-2 .container .inner-wrap .inner-content .inner-illustration{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .section-2 .container .inner-wrap .inner-content .inner-illustration .inner-box{
+        margin: 15px;
+    }
+    .section-2 .container .inner-wrap .inner-content .inner-desc{      
+        width: 100%;
+        color: var(--color-text);
+        margin-top: 10px;
+    }
+    
+    .inner-title1, .inner-title2{
+        text-align: center;
+    }
+    /* .section-7 .container .inner-pic .inner-desc .inner-box{
+        padding: 0;
+    } */
 }
 /* end-section2 */
 
@@ -692,6 +715,7 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
+    /* text-align: center; */
 }
 .section-7 .container .inner-pic .inner-desc .inner-box{
     display: flex;
@@ -746,7 +770,14 @@
         font-size: 14px;
     }
 }
-
+@media (max-width: 420px){
+    .section-7 .container .inner-pic .inner-desc .inner-box{
+        padding: 0;
+    }
+    .section-7 .container .inner-pic .inner-desc .button{
+        margin-left: 12px;
+    }
+}
 /* end-section7 */
 
 /* section8 */
@@ -928,5 +959,12 @@
     padding: 32px 0;
     font-size: 18px;
     font-weight: 500;
+}
+@media(max-width: 468.98px){
+    .footer .inner-content{
+        padding: 32px 16px;
+        font-size: 14px;
+        font-weight: 500;
+    }
 }
 /* end-footer */
